@@ -1,5 +1,6 @@
 # OkayG_Submission
 School Website Prototype
+OPEN INDEX.HTMLTO OPEN MAIN PAGE AND NAVIGATE TO OTHER PAGES FROM MAIN PAGE
 Structure- Main Home Page(overall description of infrasture and facilities)
             \/
           Navigation Bar(common to all pages) - 1.Home 
