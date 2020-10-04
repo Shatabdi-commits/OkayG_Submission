@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>School</title>
+  </head>
+  <body>
+    <h1>ABC ACADEMY</h1>
+
+    <!-- Navigation bar that takes you to the main pages and is common to call pages -->
+    <nav class="navbarfixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="faculty.html">Faculty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="achievements.html">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Locate us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fee Structure</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+<!-- This is a button group to access the following, it either opens a modal or takes to different pages -->
+      <aside><div class="btn-group btn-group-lg btn-group-vertical" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary" id = "apply" >Apply</button>
+       
+        <button type="button" class="btn btn-outline-primary"><a href = "calender.html">Calender</a></button>
+        <button type="button" class="btn btn-outline-primary"><a href = "parents.html"><u>Parent's reviews</u></a></button>
+        <button type="button" class="btn btn-outline-primary"><a href = "medical.html">Medical Forms</a></button>
+        <button type="button" class="btn btn-outline-primary" ><a href = "leave.html"><u> Request for leave</u></a></button>
+        <button type="button" class="btn btn-outline-primary" ><a href = "complain.html"><u>Lodge complaint</u></a></button>
+        <button type="button" class="btn btn-outline-primary"></button>
+
+       
+      </div>
+     </aside>
+     <!-- Cards used to depict infrastructure and thier uses of the particular school -->
+      <div class="row row-cols-1 row-cols-md-2 g-4" id = "cards">
+        <div class="col">
+          <div class="card">
+            <img src="image.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Administration</h5>
+              <p class="card-text">The Administration consists of a carefully selected team of expert individuals who are responsible 
+                  for planning of school programs and activities, directing school work and formulating and executing educational policies. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="lab.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Labs</h5>
+              <p class="card-text">Laboratory experiences provide opportunities for students to interact directly 
+                  with the material world (or with data drawn from the material world), using the tools,
+                   data collection techniques, models, and theories of science. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="classroom.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Classroom</h5>
+              <p class="card-text">The classes are shifting from being teacher-centered to student-centered. The role of the teacher is changing from being a ‘sage on the stage’ 
+                  to the ‘guide on the side’. Students sit in groups of four.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="library..jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Library</h5>
+              <p class="card-text">The purpose of our school library is to help every member of your school community — students, staff,
+                   families and whānau — gain new knowledge, skills, and dispositions for learning and 
+                  personal development that they will use throughout their lives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal is added to apply button with the feature of backdrop -->
+      <div id="backdrop"></div>
+      <div class="modal card" id="add-modal">
+        <div class="modal__content">
+          <label for="Name of Applicant">Name of Applicant</label>
+          <input type="text" name="Name" id="name" />
+          <label for="Phone-number"> Phone-number </label>
+          <input type="number" min ="1000000000" step = "1" max = "9999999999"
+          name="phone-number" id="Phone-Number" />
+          <label for="rating">Which Standard are you applying for</label>
+          <input
+            type="number"
+            step="1"
+            max="5"
+            min="1"
+            name="standard"
+            id="standard"
+          />
+        </div>
+        <div class="modal__actions">
+          <button class="btn btn--passive" id = "cancel">Cancel</button>
+          <button class="btn btn--success" id = "add">Enter</button>
+        </div>
+      </div>
+     
+<br>
+<hr>
+<br>
+<footer>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+</footer>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" 
+      integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+       crossorigin="anonymous"></script>  
+       <script src="app.js" defer></script>
+  </body>
+</html>
