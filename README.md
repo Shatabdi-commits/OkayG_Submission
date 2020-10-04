@@ -1,7 +1,23 @@
 # OkayG_Submission
-School Website Prototype
-OPEN INDEX.HTMLTO OPEN MAIN PAGE AND NAVIGATE TO OTHER PAGES FROM MAIN PAGE
-Structure- Main Home Page(overall description of infrasture and facilities)
+## School Website Prototype
+
+
+# Prerequisites
+### Install bootstrap
+
+# Cloning and Running the Application in local
+ 
+Clone the project into local
+
+open **index.html** (this should load the template in the default browser)
+
+
+
+# Application design
+
+## Structure  
+
+Main Home Page(overall description of infrasture and facilities)
             \/
           Navigation Bar(common to all pages) - 1.Home 
                                                 2.Faculty(page showing board positions and faculty member)
@@ -15,12 +31,16 @@ Structure- Main Home Page(overall description of infrasture and facilities)
                                              3.Parents reviews
                                              4.Medical forms
                                              5.Request for leave
-                                             6.Lodge complaint
+                                             6.Lodge a complaint
              \/
-         Footer (only in home page)    -   Contains logos with links that can take to other media pages of the school 
-References - 1.https://v5.getbootstrap.com/docs/5.0/forms/form-control/
-             2.https://www.w3schools.com/
-             3.https://fontawesome.com/
-             4.https://www.google.com/imghp?hl=EN
+         Footer (only in home page)    -   Contains logos with links that can take to other media pages of the 
+
+**school 
+References** - 1.https://www.w3schools.com/
+             2.https://fontawesome.com/
+             3.https://www.google.com/imghp?hl=EN
+             
+
+
           
                 
