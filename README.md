@@ -1,4 +1,4 @@
-# OkayG_Submission
+# School Website Prototype
 ## School Website Prototype
 
 
